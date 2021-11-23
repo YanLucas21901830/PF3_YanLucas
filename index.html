@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon1.png" type="imagen">  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css.css">
+    <title>Cadastro</title>
+</head>
+<body class="text-center">
+  <section class="form-signin">
+    <h1 class="h3 mb-3 font-weight-normal">Finanças</h1>
+
+    <label for="input" class="sr-only">Nome Completo</label>
+    <input id="Nome" type="text" id="inputText" class="form-control" placeholder="Seu Nome" required autofocus>
+
+    <label for="input" class="sr-only">Valor mensal</label>
+    <input id = "ValorMensal" type="number" id="ValorMensal" class="form-control" placeholder="Valor Mensal" required autofocus>
+
+    <label for="input" class="sr-only">Taxa de juros</label>
+    <input id ="Juros" type="number" id="Juros" class="form-control" placeholder="Taxa de juros" required>
+
+    <label for="input" class="sr-only">Parcelas</label>
+    <input id = "Parcelas" type="number" id="Parcelas" class="form-control" placeholder="Parcelas" required>
+    <input class="btn btn-lg btn-primary btn-block" type="button" value="calcular" class="button" onclick="Calcular()">
+    <p id="resultado" class="mt-5" style="color: white;"></p>
+  </section>
+  
+  <script src="java.js"></script>
+</body>
+</html>
